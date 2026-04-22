@@ -27,6 +27,10 @@ public class Suma : MonoBehaviour
         int parsearNum2 = int.Parse(input_suma2.text);
         int suma = parsearNum1 + parsearNum2;
         string resultado = (suma).ToString();
-        txt_Resultado.text = "el resultado de la suma entre los dos números ingresados es " + resultado;
+        if (suma > 0 ){
+       txt_Resultado.text = "el resultado de la suma entre los dos números ingresados es " + resultado;
+    }else {
+        txt_Resultado.text = "ERROR";
+        }
     } 
 }
